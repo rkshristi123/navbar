@@ -1,24 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
+import Logo from "./Components/Logo"
+import Links from "./Components/Links"
+import Button from "./Components/Button"
+
+var box={
+  
+  height: "50px",
+  width:"80%",
+  margin:"auto",
+  marginTop:"20px",
+  display:"flex",
+  backgroundColor:"black",
+  textAlign:"center",
+  
+
+  
+}
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     <div className="App">
+      <div style={box}>
+        <Logo/>
+        <Links/>
+        <Button/>
+      </div>
+     </div>
   );
 }
 
